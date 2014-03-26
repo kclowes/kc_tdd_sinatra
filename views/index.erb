@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head></head>
-<body>Welcome</body>
+<body>Welcome
+<a href="tasks/new">Add a Task</a>
+<ul>
+  <% tasks.each do |task, id| %>
+    <li>
+      <%= task %>
+    </li>
+  <% end %>
+
+</ul>
+
+</body>
 </html>
